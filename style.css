@@ -65,12 +65,24 @@ nav a.active {
     border-bottom: 3px solid #b74b4b;
 }
 
+@media (max-width: 1024px) {
+    /* Mobile adjustments */
+    header {
+        padding: 1rem 5%;
+    }
+
+    nav a {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+}
+
 @media (max-width: 995px) {
     nav {
         position: absolute;
         top: 0;
         right: 0;
-        width: 40%;
+        width: 60%;
         border-left: 3px solid #b74b4b;
         border-bottom: 3px solid #b74b4b;
         border-top-left-radius: 2rem;
@@ -274,31 +286,6 @@ span {
     background-color: black;
     color: white;
     text-align: center;
-  }
-  
-  .skills h2 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-  }
-  
-  .tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .tech-stack img {
-    height: 40px;
-    margin: 0.5rem;
-  }
-
-  .skills {
-    padding: 5rem 9%;
-    background-color: black;
-    color: white;
-    text-align: center;
 }
 
 .skills h2 {
@@ -328,3 +315,14 @@ span {
     transform: scale(1.2);
 }
 
+/* Mobile and Tablet Adjustments */
+@media (max-width: 768px) {
+    .skills h2 {
+        font-size: 3rem;
+    }
+
+    .tech-stack img {
+        width: 50px;
+        height: 50px;
+    }
+}
